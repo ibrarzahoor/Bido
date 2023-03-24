@@ -1,0 +1,329 @@
+.logo-img{
+
+    border-radius: 30px;
+    margin-left: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight:600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+h6{
+    color: #d8d8d8;
+
+}
+hr{
+    width: 30px;
+    height: 5px;
+    background-color: #F0A500;
+}
+/* navbar section */
+
+.navbar{
+    font-size: 17px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px #15133C;
+}
+.navbar ul{
+    color: #15133C;
+}
+.navbar-custom {
+    background-color: #F0A500;
+}
+/* mobile nav*/
+#bar{
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black; 
+}
+#bar:hover,
+#bar.activ {
+    color: #d8d8d8;
+    
+}
+@media only screen and (max-width:991px){
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+}
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.navbar-light  .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: #F0A500;
+}
+.navbar i{
+    font-size:  1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+/* title section */
+#home{
+    background-image: url("images/back1.png");
+     /* width:100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: top centers; */
+    height: 80vh;
+    background-color: #15133C;
+    background-position: top 80px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #d8d8d8;
+}
+
+#home span{
+    color: #F0A500;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #15133C;
+    color: #F0A500;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #F0A500;
+    color: #15133C;
+}
+#new{
+    padding: 0px 20px 0px 20px;
+   
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: #F0A500 ;
+    opacity: 0.7;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+#new .new-arrival-text{
+    font-family: 'Charmonman', cursive;
+    font-weight: 800;
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    /* color: #2a2a2a; */
+    /* background: none; */
+    text-transform: uppercase;
+    /* border-bottom: 1px solid #2a2a2a; */
+    /* padding:2.5px ; */
+    transform: translateY(70px);
+    transition: 0.3s ease;
+
+}
+#new .one .details button:hover,
+#new .one .details button.active{
+    color: white;
+    /* border-bottom: 1px solid white; */
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    
+}
+
+/* products */
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem ;
+     
+}
+.product:hover img {
+    opacity: 0.7;
+}
+.product .buy-btn {
+    background: #F0A500;
+    transform: translateY(20px);
+    opacity: 0;
+    color: #d8d8d8;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  
+    transform: translateY(0);
+    opacity:1;
+
+}
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 1rem;
+    color: #F0A500;
+}
+
+#banner{
+    background-image: url("images/banner/2.jpg");
+    height: 60vh;
+    background-color: #15133C;
+    background-position: top 70px center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #d8d8d8;
+}
+#banner h4,h1{
+    color: white;
+}
+#banner button{
+    background-color: #F0A500;
+    color: #d8d8d8;
+
+}
+
+/* footer */
+footer{
+    background-color: #15133C;
+
+}
+footer h5{
+    /* background-color: #d8d8d8; */
+    font-weight: 700;
+    font-size: 2rem;
+    color: #F0A500;
+}
+footer h6{
+    color:yellow;
+}
+footer li{
+    padding-bottom: 5px;
+
+}
+footer li a{
+    font-size: 1rem;
+    color: white;
+ 
+}
+footer li a:hover{
+    color: #d8d8d8;
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+}
+footer .copyright a{
+   color: #F0A500;
+   width: 38px;
+   height: 38px;
+   /* background-color: #fff; */
+   display: inline-block;
+   text-align: center;
+   line-height: 38px;
+   border-radius: 50%; 
+   transition: 0.3s ease;
+   margin: 0 5px;
+}
+footer .copyright a:hover{
+    color: #F0A500;
+    background-color: black;
+ }
+
+ /* cart */
+ #cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+ }
+ #cart-container table thead{
+    font-weight: 700;
+    color: #d8d8d8;
+    background-color: #F0A500;
+    padding: 8px 0;
+ }

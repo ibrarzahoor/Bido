@@ -1,0 +1,13 @@
+{
+  "name": "bido",
+  "version": "1.0.0",
+  "description": "this is a auction site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass./sass/style.scss style.css --watch"
+
+  },
+  "author": "kashif",
+  "license": "ISC"
+}
